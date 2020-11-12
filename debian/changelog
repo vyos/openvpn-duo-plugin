@@ -1,0 +1,6 @@
+openvpn-plugin-duo (2.4) unstable; urgency=low
+
+  * Initial packaging.
+
+ -- Daniil Baturin <daniil@vyos.io>  Thu, 12 Nov 2020 07:43:59 +0100
+

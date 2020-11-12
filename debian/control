@@ -1,0 +1,15 @@
+Source: openvpn-plugin-duo
+Section: contrib/net
+Priority: extra
+Maintainer: VyOS maintainers and contributors <maintainers@vyos.net>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 9), autotools-dev, autoconf, quilt, python3
+
+Package: openvpn-plugin-duo
+Architecture: any
+Depends: openvpn,
+ python3
+ ${misc:Depends}
+Replaces: openvpn-plugin-duo
+Description: OpenVPN plugin for Duo 2FA
+ OpenVPN plugin for Duo 2FA

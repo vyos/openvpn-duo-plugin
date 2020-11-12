@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+DIR := debian/openvpn-plugin-duo
+PREFIX := /usr/lib/openvpn/duo
+
+%:
+	dh $@ --with python3, --with quilt
+
+override_dh_auto_build:
+	make PREFIX=$(PREFIX)
+
+override_dh_auto_install:
+	mkdir -p $(DIR)/$(PREFIX)
+
+	make install DESTDIR=$(DIR) PREFIX=$(PREFIX)
